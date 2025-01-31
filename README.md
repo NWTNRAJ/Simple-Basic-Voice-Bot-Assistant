@@ -54,8 +54,8 @@ javascript :
 You send the question to the endpoint, which returns a concise answer that is read aloud by the assistant.
 
 **Step 4:** Speech Synthesis (Text-to-Speech)
-The speechSynthesis API is used to convert text (the response from Gemini) into speech. Once a response is returned from the Gemini API, it is read aloud to the user.
-The response is passed to SpeechSynthesisUtterance, which speaks the answer.
+    The speechSynthesis API is used to convert text (the response from Gemini) into speech. Once a response is returned from the Gemini API, it is read aloud to the user.
+    The response is passed to SpeechSynthesisUtterance, which speaks the answer.
 
 javascript :
 
@@ -65,22 +65,26 @@ javascript :
 
 
 **Step 5:** Handling Errors and Timeout
-Error handling is implemented in case there’s an issue with speech recognition or API requests. If there is an error in the response, the user is prompted to try again.
+    Error handling is implemented in case there’s an issue with speech recognition or API requests. If there is an error in the response, the user is prompted to try again.
 
 **Step 6:** Auto-Restart the Speech Recognition
-If the speech recognition stops or encounters an error, it is automatically restarted, ensuring the voice assistant is always listening for new input.
+    If the speech recognition stops or encounters an error, it is automatically restarted, ensuring the voice assistant is always listening for new input.
 
 **3. How to Use the Code**
 To use this code, follow these steps:
-1.Set up the HTML file: Copy and paste the HTML structure with the embedded JavaScript into your project.
-2.Add the Gemini API key: Replace the GEMINI_API_KEY variable with your actual API key from Google Cloud.
-3.Test the application: Open the HTML file in a browser that supports Web Speech API (like Google Chrome). It will automatically start listening for voice input as soon as the page loads.
-4.Deployment: You can deploy this project on any basic web server or static hosting service like GitHub Pages, Netlify, or Vercel.
+    1.Set up the HTML file: Copy and paste the HTML structure with the embedded JavaScript into your project.
+    
+    2.Add the Gemini API key: Replace the GEMINI_API_KEY variable with your actual API key from Google Cloud.
+    
+    3.Test the application: Open the HTML file in a browser that supports Web Speech API (like Google Chrome). It will automatically start listening for voice input as soon as the page loads.
+    
+    4.Deployment: You can deploy this project on any basic web server or static hosting service like GitHub Pages, Netlify, or Vercel.
+    
 
 **4. Possible Enhancements**
-Add additional features: Enhance the bot with more functionality such as dynamic responses based on specific keywords or actions.
-Improve UI/UX: Design a better user interface with additional feedback mechanisms like showing a loading spinner while the response is being generated.
-Add error handling for network issues: Handle situations where the API request fails due to network connectivity issues.
+    Add additional features: Enhance the bot with more functionality such as dynamic responses based on specific keywords or actions.
+    Improve UI/UX: Design a better user interface with additional feedback mechanisms like showing a loading spinner while the response is being generated.
+    Add error handling for network issues: Handle situations where the API request fails due to network connectivity issues.
 
 
 **This simple voice assistant leverages Gemini API for text generation and Web Speech API for voice input and output, creating an interactive and responsive experience. The core of the application involves handling speech input, sending it to the Gemini API for processing, and speaking the response back to the user. By following the steps above and using the provided code, you can build your own voice-powered assistant and expand on it with more features and improvements.**
