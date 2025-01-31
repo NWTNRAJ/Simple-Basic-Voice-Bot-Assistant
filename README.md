@@ -72,13 +72,14 @@ javascript :
 
 **3. How to Use the Code**
 To use this code, follow these steps:
-    1.Set up the HTML file: Copy and paste the HTML structure with the embedded JavaScript into your project.
+
+1.Set up the HTML file: Copy and paste the HTML structure with the embedded JavaScript into your project.
     
-    2.Add the Gemini API key: Replace the GEMINI_API_KEY variable with your actual API key from Google Cloud.
+2.Add the Gemini API key: Replace the GEMINI_API_KEY variable with your actual API key from Google Cloud.
     
-    3.Test the application: Open the HTML file in a browser that supports Web Speech API (like Google Chrome). It will automatically start listening for voice input as soon as the page loads.
+3.Test the application: Open the HTML file in a browser that supports Web Speech API (like Google Chrome). It will automatically start listening for voice input as soon as the page loads.
     
-    4.Deployment: You can deploy this project on any basic web server or static hosting service like GitHub Pages, Netlify, or Vercel.
+4.Deployment: You can deploy this project on any basic web server or static hosting service like GitHub Pages, Netlify, or Vercel.
     
 
 **4. Possible Enhancements**
