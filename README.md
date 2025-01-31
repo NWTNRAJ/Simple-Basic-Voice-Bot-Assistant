@@ -32,17 +32,24 @@ Axios is used for making the HTTP request, sending the user’s query to Gemini 
 API Request Example:
 
 javascript :
-const response = await axios.post(
+
+    const response = await axios.post(
+
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`,
+    
     {
+    
         contents: [{
             parts: [{
                 text: `Give a concise answer to: ${query}. Max 3 sentences.`
             }]
         }]
     },
+    
     { timeout: 3000 }
-);
+      );
+
+
 
 You send the question to the endpoint, which returns a concise answer that is read aloud by the assistant.
 
@@ -51,9 +58,10 @@ The speechSynthesis API is used to convert text (the response from Gemini) into 
 The response is passed to SpeechSynthesisUtterance, which speaks the answer.
 
 javascript :
-const utterance = new SpeechSynthesisUtterance(response);
-utterance.voice = synth.getVoices().find(voice => voice.lang === 'en-US');
-synth.speak(utterance);
+
+    const utterance = new SpeechSynthesisUtterance(response);
+    utterance.voice = synth.getVoices().find(voice => voice.lang === 'en-US');
+    synth.speak(utterance);
 
 
 **Step 5:** Handling Errors and Timeout
