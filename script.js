@@ -1,4 +1,4 @@
-    const GEMINI_API_KEY = 'AIzaSyB0sz0o9tZu8DI3RiT1JfWGCx-5X0ze6So'; 
+    const GEMINI_API_KEY = 'YOUR API CODE'; 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         const recognition = new SpeechRecognition();
         const synth = window.speechSynthesis;
